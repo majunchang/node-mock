@@ -1,0 +1,28 @@
+{
+  "name": "node-mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mock": "nodemon main.js",
+    "dev": "npm run mock ",
+    "start": "npm run dev "
+  },
+  "keywords": [],
+  "author": "majunchang",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "express": "^4.16.4",
+    "mockjs": "^1.0.1-beta3",
+    "nodemon": "^1.12.6"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.26.0"
+  }
+}
