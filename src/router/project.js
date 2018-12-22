@@ -5,11 +5,10 @@ import projectOne from '../api/projectOne'
 const router = express.Router()
 
 router.get('/test', project.test)
-router.get('/le', project.le)
+router.get('/geturl', project.geturl)
+router.post('/postUrl', project.postUrl)
 
 for (let k in projectOne) {
-  console.log(k)
-  console.log(projectOne[k])
   router.get(`/${k}`, function (req, res) {
     res.json(projectOne[k])
   })
